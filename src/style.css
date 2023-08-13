@@ -91,7 +91,7 @@ div.about-us,
 div.image-div,
 div.menu-div,
 div.contact-div {
-    width: 40%;
+    width: 60%;
     background-color: var(--ltgr);
     padding: 10px;
     border: 2px solid var(--blk);
@@ -166,12 +166,13 @@ div.contact-div>ul {
     padding: 0;
 }
 
-div>*h4 {
+h4 {
     margin: 0;
     padding: 10px;
 }
 
-div>*h6 {
+h6 {
     margin: 0;
     padding: 0;
 }
+
