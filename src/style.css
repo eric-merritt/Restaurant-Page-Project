@@ -20,7 +20,7 @@ div {
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     margin: auto;
     display: grid;
     grid: 1fr 15fr / 1fr;
