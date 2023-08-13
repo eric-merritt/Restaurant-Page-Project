@@ -166,8 +166,8 @@ div.contact-div>ul {
     padding: 0;
 }
 
-.menu-div>div>h4,
-.menu-div>div>h6 {
+div>*h6,
+div>*h4 {
     padding: 10px;
     margin: 0;
 }
