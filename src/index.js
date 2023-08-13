@@ -55,6 +55,7 @@ function homePage() {
 
         const homeImage = new Image();
             homeImage.src = ChefPhoto;
+            homeImage.className = 'home-image';
 
         const bodyContent = bodyDiv.children;
             bodyContent[1].appendChild(aboutUs);
