@@ -170,7 +170,7 @@ function homePage() {
             const navLinks = Page.navBar.children;
 
                 navLinks[2].classList.add('selected');
-                navLinks[2].classList.add('not-selected');
+                navLinks[2].classList.remove('not-selected');
 
                 navLinks[0].classList.remove('selected');
                 navLinks[0].classList.add('not-selected');
