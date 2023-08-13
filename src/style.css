@@ -1,0 +1,148 @@
+:root {
+    --gr: #57534e;
+    --ltgr: #d4d4d4;
+    --blk: #0a0a0a;
+
+    
+    height: 100vh;
+    background-color: var(--blk);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid: 1fr 15fr / 1fr;
+    justify-content: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: grid;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+ul {
+    background-color: var(--gr);
+    justify-items: center;
+}
+
+li {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: end;
+  background-color: var(--ltgr);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border: 2px solid var(--blk);
+  border-top: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--gr);
+    z-index: 1;
+}
+
+div.heading {
+    font-size: 40px;
+    text-align: center;
+    height: content;
+}
+
+div.about-us {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+div.image-div {
+    text-align: center;
+}
+
+div.heading,
+div.about-us,
+div.image-div,
+div.menu-div {
+    width: 40%;
+    background-color: var(--ltgr);
+    padding: 10px;
+    border: 2px solid var(--blk);
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 80%;
+}
+
+.selected {
+    background-color: var(--gr);
+    border-bottom: none;
+    z-index: 2;
+    font-weight: 600;
+}
+
+.home,
+.menu,
+.contact {
+    font-weight: 600;
+}
+
+.not-selected {
+    border-bottom: 2px solid var(--blk);
+    z-index: 0;
+}
+
+.not-selected:hover {
+    color: white;
+    border: none;
+    z-index: 2px;
+}
+
+.not-selected.selected:hover {
+    color: black;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+.entrees,
+.beverages,
+.sides {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu-div {
+    text-align: center;
+}
+
