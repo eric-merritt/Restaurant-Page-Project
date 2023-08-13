@@ -1,9 +1,7 @@
 export const Page = (() => {
 
 const navBar = document.createElement('ul');
-    navBar.addEventListener('click',(e) => {
-        e.target.classList.add('not-selected');
-    })
+    
     navBar.classList.add('navbar');
 
 const navItems = ['menu','home','contact']; 

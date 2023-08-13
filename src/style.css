@@ -41,9 +41,12 @@ div {
 ul {
     background-color: var(--gr);
     justify-items: center;
+    list-style-type: none;
 }
 
-li {
+li.menu,
+li.home,
+li.contact {
   list-style-type: none;
   text-transform: uppercase;
   text-align: end;
@@ -86,7 +89,8 @@ div.image-div {
 div.heading,
 div.about-us,
 div.image-div,
-div.menu-div {
+div.menu-div,
+div.contact-div {
     width: 40%;
     background-color: var(--ltgr);
     padding: 10px;
@@ -101,7 +105,9 @@ img {
     width: 80%;
 }
 
-.selected {
+li.menu.selected,
+li.home.selected,
+li.contact.selected {
     background-color: var(--gr);
     border-bottom: none;
     z-index: 2;
@@ -125,7 +131,7 @@ img {
     z-index: 2px;
 }
 
-.not-selected.selected:hover {
+.selected:hover {
     color: black;
 }
 
@@ -142,7 +148,21 @@ p {
     font-weight: 600;
 }
 
-.menu-div {
+.menu-div,
+.contact-div {
     text-align: center;
+}
+
+li.contactItems {
+    padding: 10px;
+    font-size: 24px;
+    background-color: var(--ltgr);
+}
+
+div.contact-div {
+    height: 70%;
+}
+div.contact-div>ul {
+    padding: 0;
 }
 
